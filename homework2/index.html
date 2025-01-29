@@ -3,16 +3,182 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Trendy Looks</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sign-in.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="icon" href="images/myLogo2.png" />
   </head>
   <body>
+    <header>
+      <div class="left-side">
+        <img src="images/myLogo2.png" alt="" />
+      </div>
+      <div class="search-bar">
+        <input type="text" name="" id="" placeholder="Search" />
+        <div class="search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg>
+        </div>
+        <svg
+          class="search-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+          />
+        </svg>
+      </div>
+      <div class="right-side">
+        <div class="wish-list" title="wish list">
+          <div class="wish-decoration"></div>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="none"
+          >
+            <path
+              d="M10.7966 4.30255L11.9999 5.53674L13.2034 4.30255C15.3006 2.15177 18.6827 2.1219 20.8156 4.21294L20.905 4.30255C23.0021 6.45334 23.0313 9.92188 20.9923 12.1093L20.905 12.2009L12 21.3334L3.09505 12.2009C0.968317 10.0199 0.968317 6.48363 3.09505 4.30255C5.22178 2.12148 8.6699 2.12148 10.7966 4.30255Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </div>
+        <div class="cart-container" title="cart">
+          <div class="cart-items-number">0</div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+            />
+          </svg>
+        </div>
+        <button class="sign-in">Sign in</button>
+      </div>
+    </header>
     <div class="some-pic-here">
-      <img
-        src="./images/flat-horizontal-sale-banner-template.avif"
-        alt="intro-pic"
-      />
+      <img src="./images/23988331_6809777.jpg" alt="intro-pic" />
     </div>
-    <header></header>
-    <main></main>
+
+    <main id="main">
+      <div class="product-container">
+        <div class="image-container">
+          <img draggable="false" src="images/product41.jpg" alt="" />
+          <button class="add-to-cart">Add to cart</button>
+          <div class="add-to-favorite-container">
+            <svg
+              class="add-to-favorite"
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <rect
+                class="heart-background"
+                width="40"
+                height="40"
+                rx="20"
+                fill="#1B1A41"
+              />
+              <rect
+                class="heart-border"
+                x="1"
+                y="1"
+                width="38"
+                height="38"
+                rx="19"
+                stroke="white"
+                stroke-opacity="0.5"
+                stroke-width="2"
+              />
+              <path
+                class="heart"
+                opacity="0.4"
+                d="M20 28C19.9191 28 19.8381 27.9788 19.7656 27.9365C19.6869 27.8905 17.8159 26.7915 15.9181 25.1355C14.7933 24.154 13.8954 23.1806 13.2495 22.2422C12.4136 21.028 11.9933 19.86 12.0001 18.7707C12.008 17.5032 12.4567 16.3113 13.2637 15.4143C14.0842 14.5023 15.1793 14 16.3472 14C17.844 14 19.2124 14.8483 20 16.192C20.7876 14.8483 22.1561 14 23.6529 14C24.7562 14 25.8089 14.4532 26.6172 15.2761C27.5042 16.1791 28.0082 17.4551 27.9999 18.7767C27.9931 19.8641 27.5649 21.0303 26.7272 22.2429C26.0792 23.1808 25.1826 24.1538 24.0622 25.135C22.1713 26.7908 20.3138 27.8898 20.2356 27.9358C20.1628 27.9786 20.0814 28 20 28Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
+        <p class="name">t-shirt dadasdad d</p>
+        <p class="price">18.99$</p>
+      </div>
+    </main>
+
+    <div class="sign-in-overlay">
+      <div class="sign-in-overlay-invisible"></div>
+      <form action="" class="sign-in-container">
+        <p>email</p>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+        <p>password</p>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+        <div class="helper">
+          <input type="submit" value="Sign in" id="submit" />
+          <a href="#" class="sign-up">Sign up</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="more">
+      <a href="#" class="pages">&lt;</a>
+      <a href="#" class="pages">1</a>
+      <a href="#" class="pages">2</a>
+      <a href="#" class="pages">3</a>
+      <a href="#" class="pages">4</a>
+      <a href="#" class="pages">5</a>
+      <a href="#" class="pages">&gt;</a>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-left-side">
+        <img src="images/myLogo.png" alt="" />
+        <p class="copyright">
+          &copy; 2025 Trendy Looks. All rights reserved. This website and its
+          content are the property of Trendy Looks. Any unauthorized use,
+          reproduction, or distribution of materials, including text, images,
+          and designs, is strictly prohibited and may result in legal action.
+        </p>
+      </div>
+      <div class="footer-right-side">
+        <div class="nav">
+          <a href="" class="links">contact</a>
+          <a href="" class="links">about</a>
+          <a href="" class="links">pricing</a>
+        </div>
+        <iframe
+          width="1020"
+          height="574"
+          src="https://www.youtube.com/embed/Xe3evWq5tas?autoplay=1&loop=1&playlist=Xe3evWq5tas&mute=1"
+          title="Metro Shopping Centre Unley TV Commercial | Click Films"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </footer>
+
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>

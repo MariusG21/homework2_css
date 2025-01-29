@@ -1,0 +1,173 @@
+.some-pic-here {
+  width: 100%;
+}
+.some-pic-here img {
+  width: 100%;
+}
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgb(213, 213, 213);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.2rem 1rem 0.4rem;
+  box-shadow: 0.2rem 0.2rem 1rem;
+  gap: 4rem;
+  z-index: 100;
+}
+.left-side {
+  display: flex;
+}
+.left-side img {
+  width: 6rem;
+  height: 6rem;
+}
+.search-bar {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  max-width: 90rem;
+  position: relative;
+}
+.search-bar input {
+  width: 100%;
+  height: 4rem;
+  border: 0.2rem solid rgb(167, 141, 255);
+  border-top-left-radius: 10rem;
+  border-bottom-left-radius: 10rem;
+  padding-left: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: rgb(85, 85, 85);
+}
+.search-bar input:hover {
+  border-color: rgb(136, 72, 255);
+}
+.search-bar input:focus {
+  border-color: rgb(119, 45, 255);
+}
+.search-bar input::placeholder {
+  color: rgba(0, 0, 0, 0.205);
+}
+.search-icon {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: 1.5rem;
+  fill: rgb(167, 141, 255);
+}
+.search-bar input:focus ~ .search-icon {
+  fill: rgb(119, 45, 255);
+}
+.search-bar svg {
+  width: 2rem;
+  height: 2rem;
+}
+.search-btn {
+  display: flex;
+  align-items: center;
+  background-color: rgb(167, 141, 255);
+  height: 4rem;
+  width: 6rem;
+  border-top-right-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  padding-left: 1.5rem;
+  cursor: pointer;
+  min-width: 5rem;
+}
+.search-btn:hover {
+  background-color: rgb(119, 45, 255);
+}
+.search-btn:active {
+  background-color: rgb(139, 77, 255);
+}
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.wish-list {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+.wish-list:hover svg {
+  fill: rgb(245, 245, 245);
+}
+.wish-list:hover svg path {
+  stroke: rgb(153, 122, 255);
+}
+.wish-list svg {
+  width: 3rem;
+  height: 3rem;
+}
+.wish-list svg path {
+  stroke: rgb(167, 141, 255);
+}
+.wish-decoration {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: rgba(204, 0, 255, 0.44);
+  top: -0.3rem;
+  right: -0.3rem;
+}
+.cart-container {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.cart-container:hover svg {
+  fill: rgb(153, 122, 255);
+}
+.cart-container svg {
+  width: 3rem;
+  height: 3rem;
+  fill: rgb(167, 141, 255);
+}
+.cart-items-number {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: rgba(204, 0, 255, 0.44);
+  border-radius: 50%;
+  top: -0.5rem;
+  right: -0.5rem;
+  font-size: 1.1rem;
+  padding-top: 0.1rem;
+  padding-left: 0.1rem;
+}
+.sign-in {
+  width: 8rem;
+  height: 3.5rem;
+  border: 0.2rem solid rgb(167, 141, 255);
+  background-color: rgb(234, 234, 234);
+
+  border-radius: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(167, 141, 255);
+  margin-left: 0.6rem;
+}
+.sign-in:hover {
+  border-color: rgb(153, 122, 255);
+  color: rgb(153, 122, 255);
+  background-color: rgb(255, 255, 255);
+}
+.sign-in:active,
+.cart-container:active,
+.wish-list:active {
+  transform: scale(0.98);
+}

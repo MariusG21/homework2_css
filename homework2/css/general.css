@@ -2,15 +2,10 @@
   font-size: 10px;
   line-height: 24px;
   user-select: none;
-  font-size: 0.6493506493506493vw;
-  line-height: 1.5584415584415585vw;
+  /* font-size: 0.6493506493506493vw;
+  line-height: 1.5584415584415585vw; */
   /* font-size: 0.5952380952vw;
     line-height: 1.4285714286vw; */
-  --primary-color: #233860;
-  --secondary-color: #355492;
-  --background-color: #192741;
-  --text-color: #5374b1;
-  --white: #fff;
 }
 @font-face {
   font-family: panton700;
@@ -33,11 +28,12 @@
 }
 
 body {
-  margin: 12rem 3rem 9rem 27rem;
+  margin: 0;
   font-family: panton700;
-  background: var(--background-color);
+  background: rgb(170, 170, 170);
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
@@ -49,8 +45,6 @@ button {
   text-align: center;
   font: inherit;
 }
-
-
 h1,
 h2,
 h3,
@@ -86,17 +80,6 @@ input[type="select"] {
   appearance: none;
   outline: none;
 }
-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-a,
-button {
-  color: inherit;
-}
-
 input {
   border: none;
   outline: none;
